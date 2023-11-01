@@ -1,6 +1,7 @@
+""" Setup file for the hello-world-generator package. """
 from setuptools import find_packages, setup
 
-with open("app/README.md", "r") as f:
+with open("app/README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
@@ -20,9 +21,9 @@ setup(
         "Programming Language :: Python :: 3.10",
         "Operating System :: OS Independent",
     ],
-    install_requires=["bson >= 0.5.10"],
+    install_requires=[],
     extras_require={
-        "dev": ["pytest>=7.0", "twine>=4.0.2"],
+        "dev": ["pytest>=7.4.3", "twine>=4.0.2", "pylint>=3.0.2", "black>=23.10.1"],
     },
-    python_requires=">=3.10",
+    python_requires=">=3.12",
 )
