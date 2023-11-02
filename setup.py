@@ -23,7 +23,7 @@ setup(
     ],
     install_requires=[],
     extras_require={
-        "dev": ["pytest>=7.4.3", "twine>=4.0.2", "pylint>=3.0.2", "black>=23.10.1"],
+        "dev": ["pytest>=7.4.3", "twine>=4.0.2", "pylint>=3.0.2", "black>=23.10.1", "wheel>=0.41.3"],
     },
     python_requires=">=3.12",
 )
