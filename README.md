@@ -19,7 +19,30 @@ black ./app/hello_world_generator
 python setup.py bdist_wheel sdist
 ```
 
-#### Install package locally
+#### Install package locally and try the package run.py
 ```bash
 python pip install .
+python run.py
+```
+
+#### Check the package
+```bash
+twine check dist/*
+```
+
+#### Publish package on Test PyPI
+Remember to setup the .pypirc file with the credentials.
+```bash
+twine upload -r testpypi dist/*
+```
+
+#### Install package from testpypi
+```bash
+python -m pip install --index-url https://test.pypi.org/simple/ hello-world-generator
+```
+
+#### Publish package on PyPI
+Remember to setup the .pypirc file with the credentials.
+```bash
+twine upload  dist/*
 ```
