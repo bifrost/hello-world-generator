@@ -44,5 +44,5 @@ python -m pip install --index-url https://test.pypi.org/simple/ hello-world-gene
 #### Publish package on PyPI
 Remember to setup the .pypirc file with the credentials.
 ```bash
-twine upload  dist/*
+twine upload dist/*
 ```
